@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d1b20d3bf0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+  <div id="header" data-aos="fade-down" data-aos-duration="1000">
+            
+    <div class="container">   
+      <nav>       
+        <ul>        
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark"></i>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </nav>
+      <div class="header-text fade-in">
+        <p id="typing"></p>
+        <br>
+        <h1 data-aos="fade-up" data-aos-delay="300">Hi, I'm Brunel Dawood From Chicago, IL</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="about-col-1">
+    <img src="images/65293ad388e7f519253c23b6_cuu_mexygabriel_design_banner-scaled.jpg" alt="Brunel Dawood" />
+  </div>
+
+
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+         <!-- <img src="https://placehold.co/300x400/555555/FFFFFF?text=User+Image" alt="User Image"> -->
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Detail-oriented Computer Science student at DePaul University, passionate about front-end development and IT support.
+Proficient in HTML, CSS, JavaScript, React.js, Git/GitHub, and modern web development tools. Demonstrated success in
+responsive design, Agile collaboration, and technical troubleshooting. Strong communicator with hands-on experience
+supporting users with software, hardware, and network-related issues. Eager to contribute in front-end development, help desk,
+or technical support roles.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+            <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+            <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+            <p class="tab-links" onclick="opentab(event, 'projects')">Projects</p>
+            <p class="tab-links" onclick="opentab(event, 'courses')">Courses</p>
+          </div>
+
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>Web Development & Design: <span>HTML, CSS, JavaScript, React.js, Responsive Web Design, Cross-Browser Compatibility, UI/UX
+                Principles, Wireframing, Figma (or Adobe XD if applicable), Git & GitHub, Chrome DevTools 
+                </span><br></li>
+              <li>IT Support & Help Desk Tools: <span>Windows, macOS, Linux (basic support & troubleshooting), Microsoft Office 365, Google
+                Workspace, Basic Networking: TCP/IP, DNS, VPN setup, Remote Support Tools: TeamViewer, AnyDesk, RDP, Hardware &
+                Software Troubleshooting, Peripheral Setup
+                </span><br></li>
+              <li>Professional Skills: <span>Strong Communication & Customer Service, Problem Solving & Analytical Thinking,
+                Team Collaboration (Agile/Scrum experience), Time Management, Attention to Detail
+                </span><br></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>Job: <span>Maintenance Worker</span><br></li>
+              <li>Company: <span>Sunshine Cleaning Service</span><br></li>
+              <li>Start and End date: <span>June 2024 - Mar 2025</span><br></li>
+              <li>Location: <span>Chicago, IL</span><br></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>Institution: <span>DePaul University</span><br></li>
+              <li>Degree: <span>Bachelor's Degree in Computer Science</span><br></li>
+              <li>Start and End date: <span>Sep 2021 - Jun 2025</span><br></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="projects">
+            <ul>
+              <li>Project name: <span> Finance Tracking Web Application</span><br></li>
+              <li>Start and End date: <span> DePaul University | Oct 2024 - Nov 2024 </span><br></li>
+              <li>Description: <span>Developed a full-featured finance tracking app with Django and PostgreSQL. Implemented user authentication, budget management, transaction tracking, and dynamic data visualizations with Chart.js. Deployed using Docker and collaborated with peers via GitHub and Agile sprints.</span><br></li>
+              <li>Tools & Frameworks: <span>Python, HTML, Django, PostgreSQL, Chart.js, Docker, Git, GitHub</span><br></li><br>
+
+              <li>Project name: <span> Box Office Data Analysis & Visualization</span><br></li>
+              <li>Start and End date: <span> DePaul University | Oct 2022 to Nov 2022 </span><br></li>
+              <li>Description: <span>Analyzed box office and budget data for major films of Top Gun: Maverick, The Batman using Excel and Google Sheets. Cleaned datasets, created visual reports, and explored correlations between budget size and revenue efficiency over time.</span><br></li>
+              <li>Tools & Frameworks: <span>HTML, CSS, JavaScript, Excel, Google Sheets, Data Visualization, Research</span><br></li><br>
+              
+              <li>Project name: <span> Unit Testing & Algorithm Verification</span><br></li>
+              <li>Start and End date: <span> DePaul University | Sep 2024 to Oct 2024 </span><br></li>
+              <li>Description: <span>Tested Java data structures and algorithms in a team environment. Created JUnit test cases for FibonacciHeap, TreapTree, LinkedQueue, and HashTableSeparateChaining. Applied Cyclomatic Complexity for quality analysis. Used GitHub and Gradle for integration and debugging.</span><br></li>
+              <li>Tools & Frameworks: <span>Java, JUnit, Git, GitHub, Gradle, Agile</span><br></li><br>
+
+              <li>Project name: <span> Tetris Game Enhancement</span><br></li>
+              <li>Start and End date: <span>  DePaul University | Nov 2024 to Dec 2024 </span><br></li>
+              <li>Description: <span>Enhanced a Tetris-style Java game using MVC architecture. Fixed bugs in movement, rotation, and collision logic. Improved scoring accuracy and collaborated with other language teams (Ruby, Scala, Swift, TypeScript) to refine gameplay and UI experience.</span><br></li>
+              <li>Tools & Frameworks: <span>Java, MVC, Git, GitHub, Agile, JUnit</span><br></li><br>
+
+              <li>Project name: <span> Bucket Management System</span><br></li>
+              <li>Start and End date: <span> DePaul University | Dec 2024 to Jan 2025 </span><br></li>
+              <li>Description: <span>Collaborated on a Java-based system to manage buckets and items. Contributed to the core logic in the BucketUtility class and wrote pseudocode to guide implementation. Tested key functions like removeBucket(), getBucket(), and getBucketsForItem() to ensure reliability and correctness. Used Agile methodology and GitHub for team coordination.</span><br></li>
+              <li>Tools & Frameworks: <span>Java, JUnit, Git, GitHub, Agile</span><br></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="courses">
+            <ul>
+              <li>Institution: <span>DePaul University</span><br></li>
+              <li>Start and End date: <span>Sep 2021 - Jun 2025</span><br></li>
+              <li>Courses: <span>COMPUTER SYSTEMS I · CSC 373 Technical Writing · WRD 204 Software Testing · SE 333 Software Projects · CSC 394 Program Language Concepts · CSC 347 PRACTICES GLOBAL SOFTWARE DEVELOPMENT · SE 371 OBJECT-ORIENTED SOFTWARE DEVELOPMENT · SE 350 Intro To Web Computing · IT 130 Intro To Web Computing · SE 325 INTRO TO COMPUTER SCIENCE II · CSC 242 Intro To Computer Science I · CSC 241 Intro To Compiler Design · CSC 348 GEO/INFO/SYS I:DIGITAL MAPPING · GEO 241 Distributed Systems · CSC 376 DISCRETE MATHEMATICS II · MAT 141 Discrete Mathematics I · MAT 140 DESIGN/ANALYSIS/ALGORITHMS · CSC 321 DATABASE SYSTEMS · CSC 355 DATA VISUALIZATION ON THE WEB · CSC 299 DATA STRUCTURES II · CSC 301 DATA STRUCTURES I · CSC 300 Data Analysis · IT 223 Content Management Systems · IT 320 COMPUTER SYSTEMS II · CSC 374</span><br></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="resume">
+    <div class="container">
+      <h3 class="sub-title">Resume</h1>
+      <p>Please download to see my Resume.</p>
+      <a href="file:///Users/bruneldawood/Downloads/BRUNEL-DAWOOD-Front%20End%20Developer%20%20Entry-Level%20IT%20Support%20%20Help%20Desk%20Technician%20%20Technical%20Support%20Specialist%20(4).pdf" class="btn btn2" download>Download Resume</a>
+    </div>
+  </div>
+
+  
+
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p> <i class="fa-solid fa-paper-plane"></i> bdawood2025@gmail.com</p>
+          <p> <i class="fa-solid fa-phone"></i> 847-757-8980</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/brunel-dawood-836220243/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></i></a>
+
+          </div>
+          
+          
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script src="script.js"></script>
+</body>
+</html>

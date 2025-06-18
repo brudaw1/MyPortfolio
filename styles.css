@@ -1,0 +1,416 @@
+body {
+    font-family: 'Inter', sans-serif; /* Using Inter font as per instructions */
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background for modern look */
+    color: #ffffff; /* White text */
+}
+
+.container {
+    padding: 10px 10%; /* Responsive padding */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Header Section */
+#header {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+  /*  background-image: url('https://placehold.co/1920x1080/000000/FFFFFF?text=Background+Image'); /* Placeholder background image */
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 140px; /* Adjust logo size */
+    border-radius: 8px; /* Rounded corners for logo */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 0;
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    border-radius: 2px; /* Rounded corners for underline */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20vh; /* Adjust margin for text positioning */
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+
+.about-col-1 img {
+    position: absolute;
+    left:100px;
+    bottom:-350px;
+    width: 80%;    
+    height: 200px;         
+    max-width: 375px;       
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;         
+  }
+  
+
+
+/* About Section */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between columns */
+}
+
+.about-col-1 {
+    flex-basis: 35%; /* 35% width for the first column */
+    min-width: 300px; /* Minimum width to prevent squishing on small screens */
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.about-col-2 {
+    flex-basis: 60%; /* 60% width for the second column */
+    min-width: 300px; /* Minimum width */
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+    flex-wrap: wrap; /* Allow tabs to wrap on smaller screens */
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 8px; /* Space for the underline */
+    border-radius: 5px; /* Rounded corners for tab links */
+}
+
+/* The selected CSS code for the active tab underline */
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    border-radius: 2px; /* Rounded corners for underline */
+}
+
+.tab-links.active-link::after {
+    width: 50%; /* Underline width for active tab */
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none; /* Hide all tab contents by default */
+}
+
+.tab-contents.active-tab {
+    display: block; /* Show active tab content */
+}
+
+
+#contact{
+    position: relative;
+    left: 450px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+    #header {
+        height: auto;
+        padding-top: 100px;
+    }
+    .header-text {
+        margin-top: 10vh;
+        font-size: 20px;
+    }
+    .header-text h1 {
+        font-size: 40px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%; /* Full width on small screens */
+        text-align: center;
+    }
+    .about-col-1 img {
+        max-width: 80%; /* Adjust image size on small screens */
+        margin: 0 auto;
+    }
+    .sub-title {
+        font-size: 40px;
+    }
+    .tab-links {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+}
+
+
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 35%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+   color: #ff004f;
+   margin-right: 15px;
+   font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+
+#resume {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#resume .btn {
+    margin: 20px 10px;
+}
+
+
+
+
+
+form input, form textarea{
+    width: 100%;
+    border:0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+     
+}
+
+form .btn2{
+    padding: 14px 60 px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
+/* ----- CSS for small screens //TODO later when I have the images ready----- */
+
+nav .fa-solid{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/) /* TODO */
+    }
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        flex-direction: column;
+        overflow-y: auto; 
+        transition: right 0.3s ease-in-out;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px 0;
+        text-align: center; 
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
