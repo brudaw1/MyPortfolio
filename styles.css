@@ -296,13 +296,20 @@ nav ul li a:hover::after {
     flex-basis: 35%;
 }
 
-.contact-right{
-    flex-basis: 35%;
+.contact-left {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+
+.contact-left p {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;    
 }
 
-.contact-left p{
-    margin-top: 30px;
-}
+
 
 .contact-left p i{
    color: #ff004f;
@@ -327,6 +334,21 @@ nav ul li a:hover::after {
     color: #ff004f;
     transform: translateY(-5px);
 }
+
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.logo:hover{
+    color: #ff004f;
+    transform: translateY(-5px); 
+}
+
 
 .contact-right form{
     width: 100%;
@@ -428,6 +450,8 @@ nav .fa-solid{
     }
     #contact{
         position: relative;
-        left: 100px;
+        left: 25px;
     }
+    
 }
+
