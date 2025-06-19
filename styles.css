@@ -192,6 +192,25 @@ nav ul li a:hover::after {
     display: block; /* Show active tab content */
 }
 
+/* Button styling */
+#resume a button {
+    position: relative;
+    top: 30px;
+    background-color: #007BFF;
+    color: white;            
+    padding: 10px 20px;        
+    border: none;              
+    border-radius: 5px;        
+    font-size: 16px;           
+    cursor: pointer;           
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  #resume a button:hover {
+    background-color: #0056b3; 
+  }
+
 
 #contact{
     position: relative;
