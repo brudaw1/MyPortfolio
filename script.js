@@ -22,7 +22,7 @@ closeMenuIcon.addEventListener("click", () => {
 });
 
 // Typing animation
-const text = "Front End Developer | Web Designer | Entry Level IT Jobs | Help Desk Technician | IT Support Specialist";
+const text = "Front End Developer | Web Designer | Help Desk Technician | IT Support Specialist";
 let i = 0;
 function type() {
   if (i < text.length) {
