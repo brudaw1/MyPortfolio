@@ -6,6 +6,13 @@ body {
     color: #ffffff; /* White text */
 }
 
+.myPic{
+    position: absolute;
+    bottom: -100px;
+    left: 650px;
+    
+}
+
 .container {
     padding: 10px 10%; /* Responsive padding */
     box-sizing: border-box; /* Include padding in element's total width and height */
@@ -475,5 +482,11 @@ nav .fa-solid{
     #contact{
         position: relative;
         left: 20px;
+    }
+
+    .myPic{
+        position: relative;
+        left:10px;
+        top:20px;
     }
 }
