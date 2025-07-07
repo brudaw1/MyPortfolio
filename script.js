@@ -20,15 +20,3 @@ openMenuIcon.addEventListener("click", () => {
 closeMenuIcon.addEventListener("click", () => {
   navLinks.style.right = "-200px";
 });
-
-// Typing animation
-const text = "Front End Developer | Web Designer | Help Desk Technician | IT Support Specialist";
-let i = 0;
-function type() {
-  if (i < text.length) {
-    document.getElementById("typing").textContent += text.charAt(i);
-    i++;
-    setTimeout(type, 100);
-  }
-}
-type();
