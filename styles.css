@@ -1,9 +1,9 @@
 body {
-    font-family: 'Inter', sans-serif; /* Using Inter font as per instructions */
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a; /* Dark background for modern look */
-    color: #ffffff; /* White text */
+    background-color: #1a1a1a; 
+    color: #ffffff; 
 }
 
 .myPic{
@@ -14,15 +14,13 @@ body {
 }
 
 .container {
-    padding: 10px 10%; /* Responsive padding */
-    box-sizing: border-box; /* Include padding in element's total width and height */
+    padding: 10px 10%; 
+    box-sizing: border-box; 
 }
 
-/* Header Section */
 #header {
     width: 100%;
-    height: 100vh; /* Full viewport height */
-  /*  background-image: url('https://placehold.co/1920x1080/000000/FFFFFF?text=Background+Image'); /* Placeholder background image */
+    height: 100vh; 
     background-size: cover; 
     background-position: center;
     display: flex;
@@ -42,8 +40,8 @@ nav {
 }
 
 .logo {
-    width: 140px; /* Adjust logo size */
-    border-radius: 8px; /* Rounded corners for logo */
+    width: 140px; 
+    border-radius: 8px; 
 }
 
 nav ul {
@@ -63,7 +61,7 @@ nav ul li a {
     font-size: 18px;
     position: relative;
     padding: 5px 0;
-    border-radius: 5px; /* Rounded corners for links */
+    border-radius: 5px; 
 }
 
 nav ul li a::after {
@@ -75,7 +73,7 @@ nav ul li a::after {
     left: 0;
     bottom: -6px;
     transition: 0.5s;
-    border-radius: 2px; /* Rounded corners for underline */
+    border-radius: 2px; 
 }
 
 nav ul li a:hover::after {
@@ -83,7 +81,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 20vh; /* Adjust margin for text positioning */
+    margin-top: 20vh;
     font-size: 30px;
 }
 
@@ -95,7 +93,6 @@ nav ul li a:hover::after {
 .header-text h1 span {
     color: #ff004f;
 }
-
 
 .about-col-1 img {
     position: absolute;
@@ -110,9 +107,6 @@ nav ul li a:hover::after {
     margin: 0 auto;         
   }
   
-
-
-/* About Section */
 #about {
     padding: 80px 0;
     color: #ababab;
@@ -122,23 +116,23 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px; /* Gap between columns */
+    gap: 20px; 
 }
 
 .about-col-1 {
-    flex-basis: 35%; /* 35% width for the first column */
-    min-width: 300px; /* Minimum width to prevent squishing on small screens */
+    flex-basis: 35%; 
+    min-width: 300px; 
 }
 
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .about-col-2 {
-    flex-basis: 60%; /* 60% width for the second column */
-    min-width: 300px; /* Minimum width */
+    flex-basis: 60%; 
+    min-width: 300px; 
 }
 
 .sub-title {
@@ -151,7 +145,7 @@ nav ul li a:hover::after {
 .tab-titles {
     display: flex;
     margin: 20px 0 40px;
-    flex-wrap: wrap; /* Allow tabs to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .tab-links {
@@ -160,11 +154,10 @@ nav ul li a:hover::after {
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    padding-bottom: 8px; /* Space for the underline */
-    border-radius: 5px; /* Rounded corners for tab links */
+    padding-bottom: 8px; 
+    border-radius: 5px; 
 }
 
-/* The selected CSS code for the active tab underline */
 .tab-links::after {
     content: '';
     width: 0;
@@ -174,11 +167,11 @@ nav ul li a:hover::after {
     left: 0;
     bottom: -8px;
     transition: 0.5s;
-    border-radius: 2px; /* Rounded corners for underline */
+    border-radius: 2px; 
 }
 
 .tab-links.active-link::after {
-    width: 50%; /* Underline width for active tab */
+    width: 50%; 
 }
 
 .tab-contents ul li {
@@ -192,14 +185,13 @@ nav ul li a:hover::after {
 }
 
 .tab-contents {
-    display: none; /* Hide all tab contents by default */
+    display: none; 
 }
 
 .tab-contents.active-tab {
-    display: block; /* Show active tab content */
+    display: block; 
 }
 
-/* Button styling */
 #resume a button {
     position: relative;
     top: 30px;
@@ -213,7 +205,6 @@ nav ul li a:hover::after {
     transition: background-color 0.3s ease;
   }
   
-  /* Hover effect */
   #resume a button:hover {
     background-color: #0056b3; 
   }
@@ -224,7 +215,6 @@ nav ul li a:hover::after {
     left: 450px;
 }
 
-/* Responsive adjustments */
 @media only screen and (max-width: 600px) {
     #header {
         height: auto;
@@ -241,11 +231,11 @@ nav ul li a:hover::after {
         margin: 0 10px;
     }
     .about-col-1, .about-col-2 {
-        flex-basis: 100%; /* Full width on small screens */
+        flex-basis: 100%; 
         text-align: center;
     }
     .about-col-1 img {
-        max-width: 80%; /* Adjust image size on small screens */
+        max-width: 80%; 
         margin: 0 auto;
     }
     .sub-title {
@@ -265,11 +255,7 @@ nav ul li a:hover::after {
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     }
-
-
-
 }
-
 
 #portfolio{
     padding: 50px 0;
@@ -294,7 +280,6 @@ nav ul li a:hover::after {
     border-radius: 10px;
     display: block;
 }
-
 
 .btn{
     display: block;
@@ -332,15 +317,12 @@ nav ul li a:hover::after {
     text-align: center;
   }
 
-
 .contact-left p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;    
 }
-
-
 
 .contact-left p i{
    color: #ff004f;
@@ -380,11 +362,9 @@ nav ul li a:hover::after {
     transform: translateY(-5px); 
 }
 
-
 .contact-right form{
     width: 100%;
 }
-
 
 #resume {
     padding: 80px 0;
@@ -394,10 +374,6 @@ nav ul li a:hover::after {
 #resume .btn {
     margin: 20px 10px;
 }
-
-
-
-
 
 form input, form textarea{
     width: 100%;
@@ -432,7 +408,6 @@ form .btn2{
     color: #ff004f;
 }
 
-/* ----- CSS for small screens //TODO later when I have the images ready----- */
 
 nav .fa-solid{
     display: none;
@@ -440,10 +415,7 @@ nav .fa-solid{
 
 
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url(images/) /* TODO */
-    }
-
+    
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -483,10 +455,13 @@ nav .fa-solid{
         position: relative;
         left: 20px;
     }
-
     .myPic{
         position: relative;
-        left:10px;
-        top:20px;
+        left: 80px;
+        top: 20px;
+    }
+    .about-col-1{
+        position: relative;
+        top: 40px;
     }
 }
