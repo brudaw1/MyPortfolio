@@ -215,48 +215,6 @@ nav ul li a:hover::after {
     left: 450px;
 }
 
-@media only screen and (max-width: 600px) {
-    #header {
-        height: auto;
-        padding-top: 100px;
-    }
-    .header-text {
-        margin-top: 10vh;
-        font-size: 20px;
-    }
-    .header-text h1 {
-        font-size: 40px;
-    }
-    nav ul li {
-        margin: 0 10px;
-    }
-    .about-col-1, .about-col-2 {
-        flex-basis: 100%; 
-        text-align: center;
-    }
-    .about-col-1 img {
-        max-width: 80%; 
-        margin: 0 auto;
-    }
-    .sub-title {
-        font-size: 40px;
-    }
-    .tab-links {
-        margin-right: 20px;
-        font-size: 16px;
-    }
-
-    .about-col-1 img {
-        position: relative;
-        left:5px;
-        bottom:-50px;
-        height:225px;
-        width: 80%;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    }
-}
-
 #portfolio{
     padding: 50px 0;
 }
@@ -413,55 +371,134 @@ nav .fa-solid{
     display: none;
 }
 
-
-@media only screen and (max-width: 600px){
-    
-    .header-text{
-        margin-top: 100%;
-        font-size: 16px;
-
+@media (max-width: 1024px) {
+    .container {
+      padding: 10px 5%; 
     }
-    .header-text h1{
-        font-size: 30px;
+  
+    .header-text h1 {
+      font-size: 48px;
     }
-    nav .fa-solid{
-        display: block;
-        font-size: 25px;
+    .header-text {
+      font-size: 24px;
     }
+  
+    .row {
+      flex-direction: column;
+      gap: 40px;
+    }
+    .about-col-1,
+    .about-col-2 {
+      flex-basis: 100%;
+      min-width: auto;
+    }
+  
+    #resume, #portfolio, #contact {
+      padding: 40px 0;
+    }
+  
+    .myPic {
+      position: relative;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 30px;
+    }
+    .about-col-1 img {
+      position: static;
+      margin: 0 auto 30px;
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #header {
+      height: auto;
+      padding: 60px 0;
+    }
+  
     nav ul {
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        flex-direction: column;
-        overflow-y: auto; 
-        transition: right 0.3s ease-in-out;
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100vh;
+      background: #1a1a1a;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+    nav .fa-bars {
+      display: block;
+      font-size: 28px;
+      color: #fff;
+      cursor: pointer;
+    }
+    nav ul .fa-circle-xmark {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 28px;
+      cursor: pointer;
     }
     nav ul li {
-        display: block;
-        margin: 25px 0;
-        text-align: center; 
+      margin: 0;
     }
-    nav ul .fa-solid{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
+    nav ul li a {
+      font-size: 22px;
     }
-    #contact{
-        position: relative;
-        left: 20px;
+  
+    .sub-title {
+      font-size: 36px;
     }
-    .myPic{
-        position: relative;
-        left: 80px;
-        top: 20px;
+    .header-text h1 {
+      font-size: 36px;
     }
-    .about-col-1{
-        position: relative;
-        top: 40px;
+  
+    .tab-links {
+      margin-right: 20px;
+      font-size: 16px;
     }
-}
+    .tab-contents ul li span {
+      display: block;
+      margin-top: 4px;
+    }
+  
+    #contact .container {
+      padding: 0 5%;
+    }
+    .contact-left {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-text h1 {
+      font-size: 28px;
+    }
+    .header-text {
+      font-size: 20px;
+      margin-top: 15vh;
+    }
+    nav .fa-bars, nav ul .fa-circle-xmark {
+      font-size: 24px;
+    }
+    nav ul {
+      width: 200px;
+    }
+    .sub-title {
+      font-size: 28px;
+    }
+    #resume a button,
+    form .btn2 {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+    }
+  }
+  
