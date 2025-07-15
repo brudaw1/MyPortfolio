@@ -288,6 +288,17 @@ nav ul li a:hover::after {
    font-size: 25px;
 }
 
+.contact-left a.contact-link {
+  color: #ababab;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.contact-left a.contact-link:hover {
+  color: #ff004f;
+}
+
 .social-icons{
     margin-top: 30px;
 }
@@ -410,6 +421,15 @@ nav .fa-solid{
       max-width: 80%;
     }
   }
+
+  @media (max-width: 768px) {
+    .contact-left a.contact-link {
+      display: block;
+      font-size: 20px;
+      margin-top: 8px;
+      word-break: break-word;
+    }
+  }
   
   @media (max-width: 768px) {
     #header {
@@ -496,7 +516,6 @@ nav .fa-solid{
     }
     #resume a button,
     form .btn2 {
-      width: 100%;
       padding: 12px;
       font-size: 16px;
     }
