@@ -18,5 +18,5 @@ openMenuIcon.addEventListener("click", () => {
 });
 
 closeMenuIcon.addEventListener("click", () => {
-  navLinks.style.right = "-200px";
+  navLinks.style.right = "-400px";
 });
