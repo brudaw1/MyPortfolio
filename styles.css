@@ -383,17 +383,18 @@ nav .fa-solid{
 }
 
 @media (max-width: 1024px) {
-    .container {
-      padding: 10px 5%; 
+    html, body {
+      overflow-x: hidden;
     }
-  
+    .container {
+      padding: 10px 5%;
+    }
     .header-text h1 {
       font-size: 48px;
     }
     .header-text {
       font-size: 24px;
     }
-  
     .row {
       flex-direction: column;
       gap: 40px;
