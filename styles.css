@@ -411,7 +411,7 @@ nav .fa-solid{
     .myPic {
       position: relative;
       bottom: 0;
-      left: 50%;
+      left: 60%;
       transform: translateX(-50%);
       margin-bottom: 30px;
     }
